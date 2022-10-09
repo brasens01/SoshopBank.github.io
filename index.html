@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NORDEA BANK</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div id="login-area">
+        <h1 class="text-center">Welcome to your personnal NORDEA Bank</h1>
+        <i class="fa fa-bank" style="font-size:48px;color:red"></i>
+        <div class="input-field">
+            <input type="email" id="email" class="form-control" placeholder="Enter your E-mail">
+            <br>
+            <input type="password" id="password" class="form-control" placeholder="Enter your password">
+            <br>
+            <button class="btn btn-success" id="login">Login</button>
+        </div>
+    </div>
+    <div id="transaction-area">
+        <h1 class="text-center">Transaction OF NORDEA BANK Area</h1>
+        <i class="fa fa-bank" style="font-size:36px"></i>
+        <div class="row d-flex justify-content-around">
+            <div class="col-md-3 py-3">
+                <div class="deposit status">
+                    <h5>Deposit</h5>
+                    <h1> <span id="current-deposit">50.000 KR</span></h1>
+                </div>
+            </div>
+            <div class="col-md-3 py-3">
+                <div class="withdraw status">
+                  <h5>STATUS</h5>
+                    <h1><span id="current-withdraw">IN PROCESSING</span></h1>
+                </div>
+            </div>
+            <div class="col-md-3 py-3">
+                <div class="balance status">
+                    <h5>DATE OF RECEIPT</h5>
+                    <h1> <span id="current-balance">11/10/2022</span></h1>
+                </div>
+            </div>
+        </div>
+       
+
+
+    <script src="script.js"></script>
+</body>
+</html>
