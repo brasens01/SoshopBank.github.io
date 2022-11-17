@@ -7,19 +7,19 @@
     <link rel="stylesheet" href="st.css">
 </head>
 <body>
-<div class="modal">
+    <div class="modal">
     <div class="modal__container">
       <div class="modal__featured">
         <button type="button" class="button--transparent button--close">
           <svg class="nc-icon glyph" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32">
             <g><path fill="#ffffff" d="M1.293,15.293L11,5.586L12.414,7l-8,8H31v2H4.414l8,8L11,26.414l-9.707-9.707 C0.902,16.316,0.902,15.684,1.293,15.293z"></path> </g></svg>
-          <span class="visuallyhidden">Return to Dashboard Page</span>
+          <span class="visuallyhidden">Return to Product Page</span>
         </button>
         <div class="modal__circle"></div>
-        <img src="soshop-club-parrainage-.png" class="modal__product" />
+        <img src="https://cloud.githubusercontent.com/assets/3484527/19622568/9c972d44-987a-11e6-9dcc-93d496ef408f.png" class="modal__product" />
       </div>
       <div class="modal__content">
-        <h2>Money transfer details to your bank account</h2>
+        <h2>Your payment details</h2>
 
         <form>
           <ul class="form-list">
@@ -37,8 +37,12 @@
               <div>
                 <label>Expiration Date</label>
                 <div class="form-list__input-inline">
-                  <input type="text" name="cc_month" placeholder="MM"  pattern="\\d*" minlength="2" maxlength="2" required="" />
-                  <input type="text" name="cc_year" placeholder="YY"  pattern="\\d*" minlength="2" maxlength="2" required="" />
+                  <label for="start">Start month:</label>
+
+<input type="month" id="start" name="start"
+       min="2018-03" value="2018-05">
+                  
+                  
                 </div>
               </div>
               <div>
@@ -50,17 +54,17 @@
                     <span class="visuallyhidden">What is CVV?</span>
                   </a>
                 </label>
-                <input type="text" name="cc_cvc" placeholder="123" pattern="\\d*" minlength="3" maxlength="4" required="" />
+                <input type="text" name="cc_cvc" placeholder="123"  minlength="3" maxlength="4" required="" />
               </div>
             </li>
             <li class="form-list__row form-list__row--agree">
               <label>
                 <input type="checkbox" name="save_cc" checked="checked">
-                Save my card for my future transfers
+                Save my card for future purchases
               </label>
             </li>
             <li>
-              <button type="submit" class="button" href="transfer-reject.html">TRANSFER FUNDS</button>
+              <button type="submit" class="button">Pay Now</button>
             </li>
           </ul>
         </form>
