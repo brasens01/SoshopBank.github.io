@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>TRANSACTION OF FUNDS REJECTED</title>
+<title>TRANSACTION OF FUNDS CONFIRMED</title>
 <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
 <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
 <style type="text/css">
@@ -21,7 +21,7 @@
 	}
    .payment_header
    {
-	   background:#f01b1b;
+	   background:#28a745;
 	   padding:20px;
        border-radius:20px 20px 0px 0px;
 	   
@@ -62,7 +62,7 @@
         color:#fff;
         border-radius:30px;
         padding:5px 10px;
-        background:#f01b1b;
+        background:#28a745;
         transition:all ease-in-out 0.3s;
     }
 
@@ -84,13 +84,25 @@
       <div class="col-md-6 mx-auto mt-5">
          <div class="payment">
             <div class="payment_header">
-               <div class="check"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i></div>
+               <div class="check"><i class="fa fa-check" aria-hidden="true"></i></div>
             </div>
             <div class="content">
-               <h1>Opps ! Something Went Wrong</h1>
+               <h1>Your card is activated, funds are being transferred to your credit card.</h1>
                <p>Your money is available, however to send the money to your credit card, please contact your bank to resolve this bank transfer problem. You are almost there.
 Sincerely, SOSHOP.CLUB BANK.</p>
-               <a href="index.html">Go to your Dashboard</a>
+               <popup id="fenetre002">
+   <bloc bords="arrondis" style="important">
+      <titre1>WARNING</titre1>
+      <p>You are trying to recover money via the SOSHOP online bank..</p>
+      <p><alert>Before the money is available on your credit card please write to your lawyer in order to finalize certain formalities, because we see that your file is not complete there is a fee that you have not yet paid, please contact your lawyer as soon as possible.</alert> </p>
+   </bloc>
+   <p>After completing this formality:</p>
+   <liste>
+     <p>The money will be transferred instantly to your credit card (or your account)</p>
+   </liste>
+</popup>
+...
+<p> <a cible="popup:fenetre002">TRANSFER FUNDS INSTANTLY</a>.</p>
             </div>
             
          </div>
