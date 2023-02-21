@@ -47,11 +47,11 @@ h1 {
 }
 
 .progressbar[title="downloading"] {
-   background-color: var(--progress);
+   background-color: blue;
 }
 
 .progressbar[title="downloaded"] {
-   background-color: var(--success);
+   background-color: blue;
 }
   
 .mp4 {
