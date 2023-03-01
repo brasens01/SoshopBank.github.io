@@ -47,15 +47,15 @@ h1 {
 }
 
 .progressbar[title="downloading"] {
-   background-color: blue;
+   background-color: green;
 }
 
 .progressbar[title="downloaded"] {
-   background-color: blue;
+   background-color: green;
 }
   
 .mp4 {
-  width: 93%;
+  width: 95%;
 }
 
 .mp3 {
