@@ -1,5 +1,5 @@
 .hh-grayBox {
-	background-color: #F8F8F8;
+	background-color: #2f5076;
 	margin-bottom: 20px;
 	padding: 35px;
   margin-top: 20px;
@@ -52,7 +52,7 @@
 	opacity: 1;
 }
 .order-tracking p {
-	color: #A4A4A4;
+	color: black;
 	font-size: 16px;
 	margin-top: 8px;
 	margin-bottom: 0;
